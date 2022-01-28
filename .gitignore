@@ -1,0 +1,7 @@
+#directories
+/out/
+/.idea/shelf/
+
+#files
+config.properties
+/.idea/workspace.xml
