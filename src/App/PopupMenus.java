@@ -4,14 +4,8 @@ import javax.swing.*;
 import java.awt.event.MouseEvent;
 
 public class PopupMenus extends JPopupMenu {
-    private JPopupMenu popupMenuUsers;
-    private JMenuItem editUserOption, deleteUserOption;
-
-    private JPopupMenu popupMenuComponents;
-    private JMenuItem editComponentOption, deleteComponentOption;
-
-    private JPopupMenu popupMenuConfigs;
-    private JMenuItem deleteConfigOption;
+    private final JPopupMenu popupMenuUsers, popupMenuComponents, popupMenuConfigs;
+    private final JMenuItem editUserOption, deleteUserOption, editComponentOption, deleteComponentOption, deleteConfigOption;
 
     public PopupMenus(GUI gui) {
         //Configure users popup menu

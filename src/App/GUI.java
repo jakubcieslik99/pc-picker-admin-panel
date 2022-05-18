@@ -7,21 +7,20 @@ import java.sql.Statement;
 import javax.swing.*;
 
 public class GUI extends JFrame {
-    private Statement statement;
+    private final Statement statement;
 
-    private GetUsers getUsers;
-    private GetComponents getComponents;
-    private GetConfigs getConfigs;
+    private final GetUsers getUsers;
+    private final GetComponents getComponents;
+    private final GetConfigs getConfigs;
 
-    private EditUserDialog editUserDialog;
-    private AboutDialog aboutDialog;
+    private final EditUserDialog editUserDialog;
+    private final AboutDialog aboutDialog;
 
-    private JMenuBar menuBar;
     private JPanel statusBar;
 
     private JLabel statusLabel, dateLabel, timeLabel;
 
-    private PopupMenus popupMenus;
+    private final PopupMenus popupMenus;
     private JPanel mainWindow, menuPanel;
 
     private JButton configsButton, componentsButton, usersButton, aboutButton, exitButton;
@@ -60,7 +59,7 @@ public class GUI extends JFrame {
         editUserDialog = new EditUserDialog(statement);
         aboutDialog = new AboutDialog();
 
-        menuBar = new MenuBar(windowsPanel, aboutDialog);
+        JMenuBar menuBar = new MenuBar(windowsPanel, aboutDialog);
         setJMenuBar(menuBar);
 
         statusBar.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.LIGHT_GRAY));
@@ -199,7 +198,7 @@ public class GUI extends JFrame {
         catch (SQLException exception) { exception.printStackTrace(); }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         GUI gui = new GUI();
         gui.setVisible(true);
     }

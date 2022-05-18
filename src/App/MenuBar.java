@@ -5,15 +5,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 
 public class MenuBar extends JMenuBar {
-    private JMenu menuBarPanel;
-    private JMenuItem exitOption;
-
-    private JMenu menuBarMenu;
-    private JMenuItem configsOption, componentsOption, usersOption;
-
-    private JMenu menuBarHelp;
-    private JMenuItem aboutOption;
-
     public MenuBar(JTabbedPane windowsPanel, AboutDialog aboutDialog) {
         //Configure shortcut keys
         Action exitAction = new AbstractAction("Zamknij") {
@@ -47,10 +38,10 @@ public class MenuBar extends JMenuBar {
         aboutAction.putValue(Action.ACCELERATOR_KEY, KeyStroke.getKeyStroke(KeyEvent.VK_H, KeyEvent.CTRL_DOWN_MASK));
 
         //Configure "Panel" menu bar option
-        menuBarPanel = new JMenu("Panel");
+        JMenu menuBarPanel = new JMenu("Panel");
         menuBarPanel.setMnemonic(KeyEvent.VK_P);
 
-        exitOption = new JMenuItem("Zamknij");
+        JMenuItem exitOption = new JMenuItem("Zamknij");
         exitOption.addActionListener((event) -> System.exit(0));
         exitOption.setAction(exitAction);
         exitOption.setMnemonic(KeyEvent.VK_Z);
@@ -58,20 +49,20 @@ public class MenuBar extends JMenuBar {
         menuBarPanel.add(exitOption);
 
         //Configure "Menu" menu bar option
-        menuBarMenu = new JMenu("Menu");
+        JMenu menuBarMenu = new JMenu("Menu");
         menuBarMenu.setMnemonic(KeyEvent.VK_M);
 
-        usersOption = new JMenuItem("Użytkownicy");
+        JMenuItem usersOption = new JMenuItem("Użytkownicy");
         usersOption.addActionListener((event) -> windowsPanel.setSelectedIndex(0));
         usersOption.setAction(usersAction);
         usersOption.setMnemonic(KeyEvent.VK_U);
 
-        componentsOption = new JMenuItem("Komponenty");
+        JMenuItem componentsOption = new JMenuItem("Komponenty");
         componentsOption.addActionListener((event) -> windowsPanel.setSelectedIndex(1));
         componentsOption.setAction(componentsAction);
         componentsOption.setMnemonic(KeyEvent.VK_K);
 
-        configsOption = new JMenuItem("Konfiguracje");
+        JMenuItem configsOption = new JMenuItem("Konfiguracje");
         configsOption.addActionListener((event) -> windowsPanel.setSelectedIndex(2));
         configsOption.setAction(configsAction);
         configsOption.setMnemonic(KeyEvent.VK_O);
@@ -81,10 +72,10 @@ public class MenuBar extends JMenuBar {
         menuBarMenu.add(configsOption);
 
         //Configure "Pomoc" menu bar option
-        menuBarHelp = new JMenu("Pomoc");
+        JMenu menuBarHelp = new JMenu("Pomoc");
         menuBarHelp.setMnemonic(KeyEvent.VK_O);
 
-        aboutOption = new JMenuItem("O aplikacji");
+        JMenuItem aboutOption = new JMenuItem("O aplikacji");
         aboutOption.addActionListener((event) -> aboutDialog.showDialog());
         aboutOption.setAction(aboutAction);
         aboutOption.setMnemonic(KeyEvent.VK_O);
