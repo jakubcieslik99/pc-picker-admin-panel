@@ -1,7 +1,7 @@
 
-# PC Picker - Panel Administratorski 🖥️
+# PC Picker - Panel Administratorski 🖥️ _(currently being refactored)_
 
-📌 Simple admin panel app used for managing database of the
+🔃 Simple admin panel app used for managing database of the
 [PC Picker](https://www.github.com/jakubcieslik99/pc-picker) app, written in Java
 with the use of Swing toolkit. Repository contains an IntelliJ IDEA project with
 a Java app.
