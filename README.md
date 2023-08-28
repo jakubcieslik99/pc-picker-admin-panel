@@ -1,14 +1,10 @@
+# PC Picker - Panel Administratorski 🖥️
 
-# PC Picker - Panel Administratorski 🖥️ _(currently being refactored)_
-
-🔃 Simple admin panel app used for managing database of the
-[PC Picker](https://www.github.com/jakubcieslik99/pc-picker) app, written in Java
-with the use of Swing toolkit. Repository contains an IntelliJ IDEA project with
-a Java app.
+📌 Simple admin panel app used for managing database of the PC Picker app, written in Java with the use of Swing toolkit, at
+the University of Zielona Góra. Repository contains a whole IntelliJ IDEA project.
 
 ![GitHub top language](https://img.shields.io/github/languages/top/jakubcieslik99/pc-picker-manager)
 ![GitHub repo size](https://img.shields.io/github/repo-size/jakubcieslik99/pc-picker-manager)
-
 
 ## Features
 
@@ -18,11 +14,9 @@ a Java app.
 
 - Listing & deleting setups
 
-
 ## Screenshots
 
 <img src="https://i.ibb.co/wd6ndzN/pc-picker-manager-1.png" width="800">
-
 
 ## Run Locally
 
@@ -34,10 +28,10 @@ a Java app.
 
 - Run the app using GUI.java class
 
-
 ## Environment Variables
 
-⚙️ To run this app, you will need to add the following environment variables to your config.properties file. If such file does not exist, create it in project root folder and fill it.
+⚙️ To run this app, you will need to add the following environment variables to your config.properties file. If such file
+does not exist, create it in project root folder and fill it.
 
 - `url`
 
@@ -45,16 +39,13 @@ a Java app.
 
 - `password`
 
-
 ## Languages
 
 🔤 Available languages: **PL**
 
-
 ## Feedback
 
 If you have any feedback, please reach out to me at ✉️ contact@jakubcieslik.com
-
 
 ## Authors
 
